@@ -1,7 +1,7 @@
 <?php require_once "includes/header.php"; // head
 require_once "Cliente.php"; // cliente
 
-$cliente = new Cliente("localhost", "crudtest", "root", ""); // objeto
+$cliente = new Cliente("localhost", "crudtest", "adm", "1234"); // objeto
 $dados = $cliente->read();
 
 ?>

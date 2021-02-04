@@ -27,7 +27,7 @@
 
                 }else{
 
-                    $cliente = new Cliente("localhost","crudtest","root","");// conectando
+                    $cliente = new Cliente("localhost","crudtest","adm","1234");// conectando
                     $cliente-> create($nome,$sobrenome,$email,$idade);// inserindo
 
                     if( $cliente == true){// alert success
@@ -52,10 +52,10 @@
             
                 <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nome" required=""  name="nome">
+                        <input type="text" class="form-control" placeholder="Nome" required="1234"  name="nome">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Sobrenome" required="" name="sobrenome">
+                        <input type="text" class="form-control" placeholder="Sobrenome" required="1234" name="sobrenome">
                     </div>
                 </div>
             
@@ -66,10 +66,10 @@
            
                 <div class="row">
                     <div class="col">
-                        <input type="email" class="form-control" placeholder="Email" required="" name="email" >
+                        <input type="email" class="form-control" placeholder="Email" required="1234" name="email" >
                     </div>
                     <div class="col-md-3">
-                        <input id="idade" name="idade" placeholder="Ex: 18" class="form-control input-md" required="" type="text" name="idade">
+                        <input id="idade" name="idade" placeholder="Ex: 18" class="form-control input-md" required="1234" type="text" name="idade">
                     </div>
                 </div>
             

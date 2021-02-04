@@ -10,7 +10,7 @@
         <?php // MENSAGEM
         require_once "Cliente.php";
 
-        $cliente = new Cliente("localhost", "crudtest", "root", ""); // conectando
+        $cliente = new Cliente("localhost", "crudtest", "adm", "1234"); // conectando
         $dados = $cliente -> buscar($_GET['id']);
 
 

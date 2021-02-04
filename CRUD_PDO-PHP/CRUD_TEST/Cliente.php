@@ -74,7 +74,7 @@ class Cliente{
 
     function buscar($id){
 
-            $cliente = new Cliente("localhost", "crudtest", "root", ""); 
+            $cliente = new Cliente("localhost", "crudtest", "adm", "1234"); 
             $dados = array();
             // pegando registro do usuario
             $sql = "SELECT * FROM clientes WHERE id = $id";

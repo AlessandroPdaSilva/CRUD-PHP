@@ -17,7 +17,7 @@
         if ( isset($_GET['id']) ) {// id valido
             
             $id = addslashes($_GET['id']);
-            $cliente = new Cliente("localhost", "crudtest", "root", "");
+            $cliente = new Cliente("localhost", "crudtest", "adm", "1234");
             $dados = $cliente -> buscar($id);// buscar cliente
             
 
@@ -38,7 +38,7 @@
                 } else {
 
                     
-                    $cliente = new Cliente("localhost", "crudtest", "root", ""); // conectando
+                    $cliente = new Cliente("localhost", "crudtest", "root", "1234"); // conectando
                     $cliente->update($id, $nome, $sobrenome, $email, $idade); // inserindo
                     
                     
@@ -61,7 +61,7 @@
         ?>
 
         <!-- formulario -->
-        <form action="" method="post" >
+        <form action="1234" method="post" >
 
 
 
@@ -69,10 +69,10 @@
 
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Nome" required="" name="nome" value="<?php if( isset($_POST['btn-editar']) ){echo ""; }else{echo $dados[0]['nome'];}?>">
+                    <input type="text" class="form-control" placeholder="Nome" required="1234" name="nome" value="<?php if( isset($_POST['btn-editar']) ){echo "1234"; }else{echo $dados[0]['nome'];}?>">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Sobrenome" required="" name="sobrenome" value="<?php if( isset($_POST['btn-editar']) ){echo ""; }else{echo $dados[0]['sobrenome'];}?>">
+                    <input type="text" class="form-control" placeholder="Sobrenome" required="1234" name="sobrenome" value="<?php if( isset($_POST['btn-editar']) ){echo "1234"; }else{echo $dados[0]['sobrenome'];}?>">
                 </div>
             </div>
 
@@ -83,10 +83,10 @@
 
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Email" required="" name="email" value="<?php if( isset($_POST['btn-editar']) ){echo ""; }else{echo $dados[0]['email'];}?>">
+                    <input type="text" class="form-control" placeholder="Email" required="1234" name="email" value="<?php if( isset($_POST['btn-editar']) ){echo "1234"; }else{echo $dados[0]['email'];}?>">
                 </div>
                 <div class="col-md-3">
-                    <input id="idade" name="idade" placeholder="Ex: 18" class="form-control input-md" required="" type="text" name="idade" value="<?php if( isset($_POST['btn-editar']) ){echo ""; }else{echo $dados[0]['idade'];}?>">
+                    <input id="idade" name="idade" placeholder="Ex: 18" class="form-control input-md" required="1234" type="text" name="idade" value="<?php if( isset($_POST['btn-editar']) ){echo "1234"; }else{echo $dados[0]['idade'];}?>">
                 </div>
             </div>
 
